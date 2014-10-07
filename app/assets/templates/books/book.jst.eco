@@ -1,0 +1,10 @@
+<div class="col-sm-3">
+  <a><img src=<%= "http://images.amazon.com/images/P/#{@book.get('amazon_id')}.01.ZTZZZZZZ.jpg"%>></a>
+  <p class="text-center rating"><strong>5/5</strong></p>
+</div>
+<div class="col-sm-9">
+  <h3><a href="#"><%= @book.get('title') %></a></h3>
+  <p class="text-muted"><em>Written by <%= @book.get('author') %></em></p>
+  <p><%= @book.get('review') %></p>
+  <span><a class="label label-primary"><%= @book.get('genre_id') %></a></span>
+</div>

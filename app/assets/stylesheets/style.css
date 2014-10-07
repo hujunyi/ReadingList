@@ -1,0 +1,12 @@
+.col-sm-8 li{
+  padding-bottom: 1em;
+}
+.rating{
+  max-width: 97px;
+  font-size: 1.8em;
+  padding-top: 8px;
+  color:#5cb85c;
+}
+h3{
+  margin-top:0
+}

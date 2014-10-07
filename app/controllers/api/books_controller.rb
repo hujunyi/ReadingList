@@ -30,5 +30,7 @@ module Api
     def book_params
       params.require(:book).permit(:title,:rating,:author,:review,:amazon_id,:genre_id)
     end
+
+    
   end
 end
