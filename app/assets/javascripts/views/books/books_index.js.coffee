@@ -12,7 +12,7 @@ class ReadingList.Views.BooksIndex extends Backbone.View
 
   appendBook: (book)->
     view = new ReadingList.Views.Book(model: book)
-    @$('#books').append(view.render().el)
+    @$('#books-list').append(view.render().el)
 
 
 

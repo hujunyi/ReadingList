@@ -1,6 +1,2 @@
-<div class="row">
-  <div class="col-sm-8">
-    <ul id="books" class="list-unstyled"> 
-    </ul>
-  </div>
-</div>
+<ul id="books-list" class="list-unstyled"> 
+</ul>
