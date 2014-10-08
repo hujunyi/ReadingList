@@ -9,3 +9,4 @@ window.ReadingList =
    
 $(document).ready ->
   ReadingList.initialize()
+

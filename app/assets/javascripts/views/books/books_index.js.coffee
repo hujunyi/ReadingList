@@ -2,7 +2,9 @@ class ReadingList.Views.BooksIndex extends Backbone.View
 
   template: JST['books/index']
   
-  initialize: ->
+  initialize: (options)->
+    console.log options
+    console.log @genres
     @collection.on('reset',@render,@)
 
   render: ->
@@ -11,7 +13,8 @@ class ReadingList.Views.BooksIndex extends Backbone.View
     @
 
   appendBook: (book)->
-    view = new ReadingList.Views.Book(model: book)
+    console.log @
+    view = new ReadingList.Views.Book({model: book,genres: @genres})
     @$('#books-list').append(view.render().el)
 
 

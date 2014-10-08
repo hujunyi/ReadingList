@@ -6,10 +6,12 @@ class ReadingList.Views.Book extends Backbone.View
   events:
     'click h3': 'showBook'
 
-  initialize: ->
-    @genre = new ReadingList.Models.Genre({id: @model.get('genre_id')})
-    @genre.on('change',@showGenre,@)
-    @genre.fetch()
+  initialize: (options)->
+    #console.log options
+    #console.log options.genres
+    #@genre = new ReadingList.Models.Genre({id: @model.get('genre_id')})
+    #@genre.on('change',@showGenre,@)
+    #@genre.fetch()
 
   render: ->
     $(@el).html(@template(book: @model))
@@ -20,4 +22,5 @@ class ReadingList.Views.Book extends Backbone.View
     Backbone.history.navigate("books/#{@model.get('id')}",true)
 
   showGenre: ->
-    @$('#genre_name').text("#{@genre.get('name')}")
+    #@$('#genre_name').text("#{@genre.get('name')}")
+    @$('#genre_name').text("123")

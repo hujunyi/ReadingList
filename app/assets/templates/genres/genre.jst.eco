@@ -1,1 +1,1 @@
-<a class="label label-primary"><%= @genre.get('name')%></a>
+<a class="label label-primary" id='genre'><%= @genre.get('name')%></a>
